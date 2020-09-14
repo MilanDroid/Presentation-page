@@ -56,12 +56,6 @@
             text-rendering: optimizeLegibility;
             background-color: var(--main-bg-color);
             color: var(--main-primary-color);
-            animation: background-color-edm;
-            animation-duration: 1.5s;
-            animation-delay: 0.1s;
-            animation-direction: alternate;
-            animation-play-state: running;
-            animation-timing-function: ease-in-out;
         }
 
         #introduction::before {
@@ -96,73 +90,26 @@
             animation-duration: 5s;
             -moz-animation-duration: 5s;
             -o-animation-duration: 5s;
-            animation-delay: 1.6s;
-            -moz-animation-delay: 1.6s;
-            -o-animation-delay: 1.6s;
+            animation-delay: 2s;
+            -moz-animation-delay: 2s;
+            -o-animation-delay: 2s;
             animation-timing-function: ease;
             -moz-animation-timing-function: ease;
             -o-animation-timing-function: ease;
         }
 
-        @keyframes background-color-edm {
-            0% {
-                content: "Hi!";
-                color: #312244;
-            }
-            10% {
-                content: "Do";
-                color: var(--main-secondary-color);
-            }
-            20% {
-                content: "you";
-                color: var(--main-primary-color);
-            }
-            30% {
-                content: "want";
-                color: var(--burned-file-color);
-            }
-            40% {
-                content: "to";
-                color: #3E1F47;
-            }
-            50% {
-                content: "know";
-                color: #0B525B;
-            }
-            60% {
-                content: "who";
-                color: var(--bedev-color);
-            }
-            70% {
-                content: "am";
-                color: var(--main-secondary-twoface-color);
-            }
-            80% {
-                content: "I";
-                color: var(--main-primary-twoface-color);
-            }
-            90% {
-                content: "?";
-                color: #1B3A4B;
-            }
-            100% {
-                content: "Let's go!";
-                color: #212F45;
-            }
-        }
-
         @keyframes message-introduction {
-            0% {font-size:20vw; content: "Hi!";}
-            10% {font-size:15vw; content: "Do";}
-            20% {font-size:20vw; content: "You";}
-            30% {font-size:15vw; content: "Want";}
-            40% {font-size:20vw; content: "To";}
-            50% {font-size:15vw; content: "Know";}
-            60% {font-size:20vw; content: "Who";}
-            70% {font-size:15vw; content: "Am";}
-            80% {font-size:20vw; content: "I";}
-            90% {font-size:15vw; content: "?";}
-            100% {font-size:20vw; content: "";}
+            0% {font-size:20vw; content: "Hi!";color: #312244;}
+            10% {font-size:20vw; content: "Hi!";color: var(--main-secondary-color);}
+            20% {font-size:15vw; content: "Do";color: var(--main-primary-color);}
+            30% {font-size:20vw; content: "You";color: var(--burned-file-color);}
+            40% {font-size:15vw; content: "Want";color: #3E1F47;}
+            50% {font-size:20vw; content: "To";color: #0B525B;}
+            60% {font-size:15vw; content: "Know";color: var(--bedev-color);}
+            70% {font-size:20vw; content: "Who";color: var(--main-secondary-twoface-color);}
+            80% {font-size:15vw; content: "Am";color: var(--main-primary-twoface-color);}
+            90% {font-size:20vw; content: "I";color: #1B3A4B;}
+            100% {font-size:15vw; content: "?";color: #212F45;}
         }
 
         @keyframes message-name {
