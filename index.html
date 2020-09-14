@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#006466">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#006466">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#006466">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Antony Brenes" />
+    <meta name="copyright" content="Antony Brenes" />
+    <meta name="robots" content="index"/>
+    <meta name="robots" content="follow"/>
+    <meta http-equiv="expires" content="43200"/>
+    <meta name="description" content="Hi I'm Antony Brenes, FullStack, Web Developer, Engineer,
+    SQL Master, Puppies lover and life enthusiast.
+    
+    I have years of experience on Development working with multiples technologies like PHP, Javascript ( JS ), Python, Java and more.
+    As part of my experience I made a lot of websites with AWS and Google Cloud Platform. IA and Data science enthusiast, owner of Wuima.com and Bedev.dev"/>
+    <meta name="keywords" content="Antony Brenes, Fullstack, Web developer, Engineer, php, js, python, java"/>
+    <title>Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --white-color: #FFFFFF;
+            --main-bg-color: #FAFAFA;
+            --main-primary-color: #4D194D;
+            --main-secondary-color: #006466;
+            --main-primary-twoface-color: #272640;
+            --main-secondary-twoface-color: #144552;
+            --main-text-color: #030303;
+            --burned-file-color: #F2C94C;
+            --bedev-color: #F5256F;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+            line-height: 20px;
+            font-family: 'Kumbh Sans', sans-serif;
+            width: 100vw;
+            max-width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-rendering: optimizeLegibility;
+            background-color: var(--main-bg-color);
+            color: var(--main-primary-color);
+            animation: background-color-edm;
+            animation-duration: 1.5s;
+            animation-delay: 0.1s;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+        }
+
+        #introduction::before {
+            content: "";
+            font-size: 25vw;
+            font-weight: 700;
+            word-wrap: wrap;            
+            animation-name: message-introduction;
+            -moz-animation-name: message-introduction;
+            -o-animation-name: message-introduction;
+            animation-duration: 1.5s;
+            -moz-animation-duration: 1.5s;
+            -o-animation-duration: 1.5s;
+            animation-delay: 0.1s;
+            -moz-animation-delay: 0.1s;
+            -o-animation-delay: 0.1s;
+            animation-play-state: running;
+            -moz-animation-state: running;
+            -o-animation-state: running;
+            animation-timing-function: ease-in-out;
+            -moz-animation-timing-function: ease-in-out;
+            -o-animation-timing-function: ease-in-out;
+        }
+
+        #introduction::after {
+            content: "";
+            font-size: 20vw;
+            font-weight: 700;
+            animation-name: message-name;
+            -moz-animation-name: message-name;
+            -o-animation-name: message-name;
+            animation-duration: 5s;
+            -moz-animation-duration: 5s;
+            -o-animation-duration: 5s;
+            animation-delay: 1.6s;
+            -moz-animation-delay: 1.6s;
+            -o-animation-delay: 1.6s;
+            animation-timing-function: ease;
+            -moz-animation-timing-function: ease;
+            -o-animation-timing-function: ease;
+        }
+
+        @keyframes background-color-edm {
+            0% {
+                content: "Hi!";
+                color: #312244;
+            }
+            10% {
+                content: "Do";
+                color: var(--main-secondary-color);
+            }
+            20% {
+                content: "you";
+                color: var(--main-primary-color);
+            }
+            30% {
+                content: "want";
+                color: var(--burned-file-color);
+            }
+            40% {
+                content: "to";
+                color: #3E1F47;
+            }
+            50% {
+                content: "know";
+                color: #0B525B;
+            }
+            60% {
+                content: "who";
+                color: var(--bedev-color);
+            }
+            70% {
+                content: "am";
+                color: var(--main-secondary-twoface-color);
+            }
+            80% {
+                content: "I";
+                color: var(--main-primary-twoface-color);
+            }
+            90% {
+                content: "?";
+                color: #1B3A4B;
+            }
+            100% {
+                content: "Let's go!";
+                color: #212F45;
+            }
+        }
+
+        @keyframes message-introduction {
+            0% {font-size:20vw; content: "Hi!";}
+            10% {font-size:15vw; content: "Do";}
+            20% {font-size:20vw; content: "You";}
+            30% {font-size:15vw; content: "Want";}
+            40% {font-size:20vw; content: "To";}
+            50% {font-size:15vw; content: "Know";}
+            60% {font-size:20vw; content: "Who";}
+            70% {font-size:15vw; content: "Am";}
+            80% {font-size:20vw; content: "I";}
+            90% {font-size:15vw; content: "?";}
+            100% {font-size:20vw; content: "";}
+        }
+
+        @keyframes message-name {
+            0% {opacity: 0;content: "Welcome!";font-size: 19vw;filter: blur(1rem);}
+            50% {opacity: 1;content: "Welcome!";filter: blur(0);}
+            100% {opacity: 1;content: "Welcome!";filter: blur(0);}
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <main>
+        <section id="introduction-section">
+            <span id="introduction"></span>
+        </section>
+    </main>
+</body>
+</html>
