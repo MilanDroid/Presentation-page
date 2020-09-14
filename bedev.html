@@ -2,7 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#006466">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#006466">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#006466">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="author" content="Antony Brenes" />
     <meta name="copyright" content="Antony Brenes" />
     <meta name="robots" content="index"/>
@@ -18,7 +26,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --main-bg-color: ;
+            --white-color: #FFFFFF;
+            --main-bg-color: #FAFAFA;
+            --main-primary-color: #4D194D;
+            --main-secondary-color: #006466;
+            --main-primary-twoface-color: #272640;
+            --main-secondary-twoface-color: #144552;
+            --main-text-color: #030303;
+            --burned-file-color: #F2C94C;
+            --bedev-color: #F5256F;
         }
 
         * {
@@ -37,8 +53,8 @@
             justify-content: center;
             align-items: center;
             text-rendering: optimizeLegibility;
-            background-color: #FAFAFA;
-            color: #4D194D;
+            background-color: var(--main-bg-color);
+            color: var(--main-primary-color);
             animation: background-color-edm;
             animation-duration: 1.5s;
             animation-delay: 0.1s;
@@ -56,46 +72,46 @@
         @keyframes background-color-edm {
             0% {
                 background-color: #312244;
-                color: #FFFFFF;
+                color: var(--white-color);
             }
             10% {
-                background-color: #006466;
-                color: #FFFFFF;
+                background-color: var(--main-secondary-color);
+                color: var(--white-color);
             }
             20% {
-                background-color: #4D194D;
+                background-color: var(--main-primary-color);
             }
             30% {
-                background-color: #F2C94C;
-                color: #030303;
+                background-color: var(--burned-file-color);
+                color: var(--main-text-color);
             }
             40% {
                 background-color: #3E1F47;
-                color: #FFFFFF;
+                color: var(--white-color);
             }
             50% {
                 background-color: #0B525B;
-                color: #FFFFFF;
+                color: var(--white-color);
             }
             60% {
-                background-color: #f5256f;
-                color: #030303;
+                background-color: var(--bedev-color);
+                color: var(--main-text-color);
             }
             70% {
-                background-color: #144552;
-                color: #FFFFFF;
+                background-color: var(--main-secondary-twoface-color);
+                color: var(--white-color);
             }
             80% {
-                background-color: #272640;
-                color: #FFFFFF;
+                background-color: var(--main-primary-twoface-color);
+                color: var(--white-color);
             }
             90% {
                 background-color: #1B3A4B;
-                color: #FFFFFF;
+                color: var(--white-color);
             }
             100% {
                 background-color: #212F45;
-                color: #FFFFFF;
+                color: var(--white-color);
             }
         }
     </style>
